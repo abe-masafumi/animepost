@@ -27,30 +27,32 @@ export const HeaderTop = () => {
   const classes = useStyles();
 
   // ボタン切り替えテスト用
-  let login = true;
+  let login = false;
 
   return (
 
-      <div className={classes.root}>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" className={classes.title}>
-              Anime Post
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" className={classes.title}>
+            Anime Post
           </Typography>
-            {
-              login === true
-                ? <>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" style={{marginRight:10}} />
-                  <PostMenu />
-                </>
-                : <>
-                  <Button color="inherit">Login</Button>
-                  <Button color="inherit">New account</Button>
-                </>
-            }
-          </Toolbar>
-        </AppBar>
-      </div>
+          {
+            login === true
+              ? <>
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" style={{ marginRight: 10 }} />
+                <PostMenu />
+              </>
+              : <>
+                <Button color="inherit" style={{ marginRight:10 }} >Login</Button>
+                <Button colorScheme="teal" style={{ background:'#31b4b2' }} >
+                  新規登録
+                </Button>
+              </>
+          }
+        </Toolbar>
+      </AppBar>
+    </div>
 
   );
 };

@@ -1,10 +1,12 @@
 import React from 'react';
+import { PostMenu } from './PostMenu';
+
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,19 +26,31 @@ const useStyles = makeStyles((theme) => ({
 export const HeaderTop = () => {
   const classes = useStyles();
 
+  // ボタン切り替えテスト用
+  let login = true;
+
   return (
-    <>
+
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" className={classes.title}>
               Anime Post
           </Typography>
-            <Button color="inherit">Login</Button>
-            <Button color="inherit">New account</Button>
+            {
+              login === true
+                ? <>
+                  <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" style={{marginRight:10}} />
+                  <PostMenu />
+                </>
+                : <>
+                  <Button color="inherit">Login</Button>
+                  <Button color="inherit">New account</Button>
+                </>
+            }
           </Toolbar>
         </AppBar>
       </div>
-    </>
+
   );
 };

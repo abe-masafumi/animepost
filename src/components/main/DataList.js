@@ -7,16 +7,22 @@ export const DataList = () => {
 
   return (
     <div style={{ width:'100%' }}>
+       {/* スペース */}
+      <div style={{ height:20 }} />
+      {/* --------------------------- */}
+      <div>
+        週刊人気作品
+      </div>
+
       <Box
-        display="flex"
-        flexWrap="wrap"
+      display="flex"
         p={1}
         m={1}
         bgcolor="background.paper"
-        sx={{ maxWidth:1640 }}
+        style={{ width:'98%',overflowX:'auto',whiteSpace:'nowrap' }}
       >
 
-        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} style={{display:'inlineBlock',listStyle:'none'}}><Data /></Box>
         <Box m={1} p={1} ><Data /></Box>
         <Box m={1} p={1} ><Data /></Box>
         <Box m={1} p={1} ><Data /></Box>
@@ -36,6 +42,43 @@ export const DataList = () => {
         <Box m={1} p={1} ><Data /></Box>
         <Box m={1} p={1} ><Data /></Box>
       </Box>
+        {/* --------------------------- */}
+        {/* --------------------------- */}
+      <div>
+        新着作品
+      </div>
+
+      <Box
+      display="flex"
+        p={1}
+        m={1}
+        bgcolor="background.paper"
+        style={{ width:'98%',overflowX:'auto',whiteSpace:'nowrap' }}
+      >
+
+        <Box m={1} p={1} style={{display:'inlineBlock',listStyle:'none'}}><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+        <Box m={1} p={1} ><Data /></Box>
+      </Box>
+        {/* --------------------------- */}
+
+
     </div>
 
   );

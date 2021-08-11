@@ -11,26 +11,26 @@ export const MainMenu = () => {
     <div>
       <BrowserRouter>
         {/* スクロースしてもついてくるメニュー */}
-        <Tabs style={{ position: 'sticky', top: 0, background: 'white', zIndex: 5 }}>
-          <TabList >
-            <Link to='/'><Tab>Home</Tab></Link>
-            <Link to='/rank'><Tab>rank</Tab></Link>
-            <Link to='/tagus'><Tab>tagus</Tab></Link>
-          </TabList>
+        <Tabs style={{ position: 'sticky', top: 0, background:'white', zIndex:5 }}>
+        <TabList >
+        <Link to='/'><Tab>Home</Tab></Link>
+          <Link to='/rank'><Tab>rank</Tab></Link>
+          <Link to='/tagus'><Tab>tagus</Tab></Link>
+        </TabList>
         </Tabs>
-
-        <hr />
+  
+          <hr />
 
         <Container fixed style={{ maxWidth: 1640 }}>
           {/* MainMenuのリスト*/}
           <Route exact path='/'
             render={(props) => <DataList />} />
 
-          <Route path='/rank'
-            render={(props) => <Rank />} />
+          <Route path='/rank' 
+          render={(props) => <Rank />} />
 
-          <Route path='/tagus'
-            render={(props) => <Tagus />} />
+          <Route path='/tagus' 
+          render={(props) => <Tagus />} />
 
         </Container>
       </BrowserRouter>

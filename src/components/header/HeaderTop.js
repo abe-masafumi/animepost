@@ -38,6 +38,7 @@ export const HeaderTop = () => {
             Anime Post
           </Typography>
           {
+            // 本番ではログインができていれば
             login === true
               ? <>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" style={{ marginRight: 10 }} />
@@ -45,7 +46,7 @@ export const HeaderTop = () => {
               </>
               : <>
                 <Button color="inherit" style={{ marginRight:10 }} >Login</Button>
-                <Button colorScheme="teal" style={{ background:'#31b4b2' }} >
+                <Button style={{ background:'#31b4b2' }} >
                   新規登録
                 </Button>
               </>

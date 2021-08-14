@@ -1,3 +1,13 @@
+<img src="home.png">
+
+# 卒業制作
+> 2021/8/9〜
+
+  使用技術
+  - react 
+  - material-ui
+  - chacra-ui 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

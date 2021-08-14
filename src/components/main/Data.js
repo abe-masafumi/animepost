@@ -52,7 +52,7 @@ export const Data = () => {
   };
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} style={{width: 300}}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -73,7 +73,7 @@ export const Data = () => {
         image={logo}
         title="Paella dish"
       />
-      <CardContent>
+      <CardContent >
         <Typography variant="body2" color="textSecondary" component="p">
           This impressive paella is a perfect party dish and a fun meal to cook together with your
           guests. Add 1 cup of frozen peas along with the mussels, if you like.
@@ -98,7 +98,7 @@ export const Data = () => {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+        <CardContent >
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
             Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10

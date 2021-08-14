@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PostMenu } from './PostMenu';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -27,7 +27,15 @@ export const HeaderTop = () => {
   const classes = useStyles();
 
   // ボタン切り替えテスト用
-  let login = false;
+  const [log, setLog] = useState(true);
+  const switchLog = () => {
+    setLog(!log);
+  };
+
+  const style = {
+    color: '#7c9cdb',
+    paddingRight: '10px',
+  }
 
   return (
 
@@ -37,16 +45,20 @@ export const HeaderTop = () => {
           <Typography variant="h6" className={classes.title}>
             Anime Post
           </Typography>
+          <button onClick={switchLog} style={style}>切り替え</button>
           {
             // 本番ではログインができていれば
-            login === true
-              ? <>
+
+            log
+              ?
+              <>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" style={{ marginRight: 10 }} />
                 <PostMenu />
               </>
-              : <>
-                <Button color="inherit" style={{ marginRight:10 }} >Login</Button>
-                <Button style={{ background:'#31b4b2' }} >
+              :
+              <>
+                <Button color="inherit" style={{ marginRight: 10 }} >Login</Button>
+                <Button style={{ background: '#31b4b2' }} >
                   新規登録
                 </Button>
               </>

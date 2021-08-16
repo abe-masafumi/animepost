@@ -48,7 +48,6 @@ export const HeaderTop = () => {
           <button onClick={switchLog} style={style}>切り替え</button>
           {
             // 本番ではログインができていれば
-
             log
               ?
               <>

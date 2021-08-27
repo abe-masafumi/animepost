@@ -1,0 +1,65 @@
+.mask {
+  z-index: 10;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+} 
+
+.ContactWalletContainer {
+  /* 位置調整 */
+  z-index: 20;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: fixed;
+  /* -------- */
+
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+  height: 500px;
+  width: 550px;
+}
+
+.space80 {
+  height: 80px;
+}
+.space40 {
+  height: 40px;
+}
+.space20 {
+  height: 20px;
+}
+.space10 {
+  height: 10px;
+}
+
+.sub {
+  font-size: 14px;
+  color: gray;
+}
+.subinfo  {
+  font-weight: bold;
+}
+
+.walletbox {
+  background: gray;
+  width: 300px;
+  height: 50px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.ContactWalletContainer > h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+

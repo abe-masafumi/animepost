@@ -4,6 +4,8 @@ import { DataList } from './DataList';
 import { Tagus } from './Tagus';
 import { Rank } from './Rank';
 import { Tabs, TabList, Tab } from "@chakra-ui/react"
+import { Profile } from "./Profile";
+
 
 export const MainMenu = () => {
 
@@ -31,6 +33,10 @@ export const MainMenu = () => {
 
           <Route path='/tagus'
             render={(props) => <Tagus />} />
+
+
+          <Route path='/id/profile/'
+            render={(props) => <Profile />} />
 
         </Container>
       </BrowserRouter>

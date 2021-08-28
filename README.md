@@ -8,6 +8,11 @@
   - material-ui
   - chacra-ui 
 
+# 疑問点
+- componentが離れすぎているところのクリック動作での表示切り替えはどうする？
+- gitignoreファイルはclone時に呼び戻せる？
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

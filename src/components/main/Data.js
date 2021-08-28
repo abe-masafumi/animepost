@@ -17,7 +17,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import logo from '../../image/進撃の巨人.jpeg';
 
-
+// --------------material-uiの記述--------------
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 // 参考Document
 // https://material-ui.com/components/cards/#ui-controls
 export const Data = () => {
+
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -127,3 +128,4 @@ export const Data = () => {
     </Card>
   );
 }
+// --------------------------------------------------------

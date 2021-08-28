@@ -6,13 +6,12 @@ import { Rank } from './Rank';
 import { Tabs, TabList, Tab } from "@chakra-ui/react"
 import { Profile } from "./Profile";
 
-
 export const MainMenu = () => {
 
   return (
     <div>
       <BrowserRouter>
-        {/* スクロースしてもついてくるメニュー */}
+        {/* ---------スクロースしてもついてくるメニュー--------- */}
         <Tabs style={{ position: 'sticky', top: 0, background: 'white', zIndex: 5 }}>
           <TabList >
             <Link to='/'><Tab>Home</Tab></Link>
@@ -20,7 +19,7 @@ export const MainMenu = () => {
             <Link to='/tagus'><Tab>tagus</Tab></Link>
           </TabList>
         </Tabs>
-
+        {/* ------------------------------------ */}
         <hr />
 
         <Container fixed style={{ maxWidth: 1640 }}>
@@ -34,7 +33,7 @@ export const MainMenu = () => {
           <Route path='/tagus'
             render={(props) => <Tagus />} />
 
-
+          {/* 未使用-プロフィール画面は第２ステップ */}
           <Route path='/id/profile/'
             render={(props) => <Profile />} />
 

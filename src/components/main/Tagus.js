@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 
-
+// material-uiの記述
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -20,13 +20,13 @@ export const Tagus = () => {
 
   return (
     <div className={classes.root}>
+      <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#風景</p></Paper>
       <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#戦闘</p></Paper>
-      <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#学園</p></Paper>
-      <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#ホラー</p></Paper>
+      <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#音楽</p></Paper>
       <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#恋愛</p></Paper>
       <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#感動</p></Paper>
-      <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#戦闘</p></Paper>
-      <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#学園</p></Paper>
+      <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#可愛い</p></Paper>
+      <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#ループ</p></Paper>
       <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#ホラー</p></Paper>
       <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#恋愛</p></Paper>
       <Paper style={{ textAlign:'center' }} ><p style={{ marginTop:10 }}>#感動</p></Paper>
